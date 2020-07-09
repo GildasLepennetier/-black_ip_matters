@@ -3,7 +3,7 @@ set -e
 # check the website
 DATABASE="blacklist.abusive.txt"
 WEBSITE="https://www.abuseipdb.com/"
-NAME_DISPLAY="[abusive ip]"
+NAME_DISPLAY="[abusive ip web]"
 DATE=$(date +"%Y-%d-%m %T" )
 COUNT1=$(cat ${DATABASE} | wc -l)
 wget -q $WEBSITE -O index.html 2> /dev/null

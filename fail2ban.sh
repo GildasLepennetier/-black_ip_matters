@@ -2,7 +2,7 @@
 set -e
 # check the logs for you
 DATABASE="blacklist.fail2ban.txt"
-NAME_DISPLAY="[fail2ban ip]"
+NAME_DISPLAY="[fail2ban-local]"
 DATE=$(date +"%Y-%d-%m %T" )
 COUNT1=$(cat ${DATABASE} | wc -l)
 zgrep 'Ban' /var/log/fail2ban.log* | awk '{print $8}' > ${DATABASE}.new
