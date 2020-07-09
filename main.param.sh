@@ -1,0 +1,2 @@
+SLEEP_MIN=4
+LIST_TODO=todo.txt
