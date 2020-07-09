@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e
-SLEEP_MIN=2
+SLEEP_MIN=1
 while [ 0 ]; do
 	echo -e "\nStill running $(date)"
 	echo "$(wc -l blacklist.txt) IPs before"
