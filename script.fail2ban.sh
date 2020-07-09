@@ -5,7 +5,7 @@ DATABASE="blacklist.fail2ban.txt"
 NAME_DISPLAY="[fail2ban-local]"
 DATE=$(date +"%Y-%d-%m %T" )
 COUNT1=$(cat ${DATABASE} | wc -l)
-zgrep 'Ban' /var/log/fail2ban.log* | awk '{print $8}' > ${DATABASE}.new
+zgrep 'Ban' /var/log/fail2ban.log* | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" > ${DATABASE}.new
 cat ${DATABASE} ${DATABASE}.new | sort | uniq > ${DATABASE}.tmp
 mv ${DATABASE}.tmp ${DATABASE}
 rm ${DATABASE}.new
