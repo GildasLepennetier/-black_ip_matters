@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e
-SLEEP_MIN=10
+SLEEP_MIN=2
 while [ 0 ]; do
 	echo -e "\nStill running $(date)"
 	echo "$(wc -l blacklist.txt) IPs before"
@@ -12,5 +12,5 @@ while [ 0 ]; do
 	rm index.html
 	rm new.txt
 	echo "exemple: $(shuf -n 1 blacklist.txt)"
-	sleep $((60*$SLEEP_MIN))s	#10 min
+	sleep $((60*$SLEEP_MIN))s
 done
