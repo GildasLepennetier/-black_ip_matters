@@ -3,6 +3,6 @@
 
 #list of script to run in the loop of the main.
 
-#abusive.sh
-fail2ban.sh
-fail2ban.report.sh
+#script.abusive.sh
+script.fail2ban.sh
+script.fail2ban.report.sh
