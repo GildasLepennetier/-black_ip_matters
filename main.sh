@@ -12,6 +12,6 @@ while [ 0 ]; do
 	rm index.html
 	rm new.txt
 	EXEMPLE=$(shuf -n 1 blacklist.txt)
-	echo -e "+$(($COUNT2-$COUNT1)) IP\t[total: $COUNT2]\t$DATE"
+	echo -e "+$(($COUNT2-$COUNT1)) IP\t[total: $COUNT2]\t$DATE\t\tex:$EXEMPLE"
 	sleep $((60*$SLEEP_MIN))s
 done
