@@ -1,8 +1,4 @@
-
-#empy and comments lines are ignores
-
-#list of script to run in the loop of the main.
-
+#  list of script to run in the loop of the main.
 #script.abusive.sh
 script.fail2ban.sh
-script.fail2ban.report.sh
+#script.fail2ban.report.sh
